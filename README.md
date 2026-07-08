@@ -25,9 +25,14 @@ It is organised in plain language and contains everything you'll normally change
 | Change any text on the page   | Find the text and edit it — for **all three** languages (`es`, `en`, `sv`). |
 | Add / edit a **member**       | Copy a `{ ... }` block in the `MEMBERS` list and change the values. |
 | Add a **Chilean researcher in Sweden** | Copy a `{ ... }` block in the `RESEARCHERS` list and change the values. |
+| Add an **Explora Nobel edition** | Copy a `{ ... }` block in the `EXPLORA_EDITIONS` list (`state: "done"` or `"upcoming"`). |
 | Add / edit a **resource**     | Copy a `{ ... }` block in the `RESOURCES` list and change the values. |
 
 Keep the quotes `" "` and commas `,` exactly as shown. That's it.
+
+### Changing the Explora Nobel documentary
+The embedded video is in [`index.html`](index.html) — search for `youtube-nocookie`.
+Replace the video id (`5yug9GZ8PjY`) with the new one from its YouTube URL.
 
 ### Adding a member photo
 Put the image in `assets/img/members/` and point to it, e.g.

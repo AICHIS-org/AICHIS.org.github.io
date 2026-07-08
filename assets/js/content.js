@@ -25,6 +25,7 @@ const CONTENT = {
   es: {
     nav: {
       about: "Sobre nosotros",
+      explora: "Explora Nobel",
       members: "Miembros",
       researchers: "Chilenos en Suecia",
       resources: "Recursos",
@@ -52,6 +53,11 @@ const CONTENT = {
         },
       ],
     },
+    explora: {
+      title: "Explora Nobel",
+      lead: "Nuestro proyecto insignia. Cada año llevamos a estudiantes de enseñanza media desde Chile a Suecia para vivir la Semana del Premio Nobel, acercándolos a la ciencia de primer nivel y a las personas que la hacen posible.",
+      videoCaption: "Documental · Edición 2024",
+    },
     members: {
       title: "Miembros",
       lead: "Personas que forman parte de AICHIS. Pronto agregaremos más perfiles.",
@@ -78,6 +84,7 @@ const CONTENT = {
   en: {
     nav: {
       about: "About us",
+      explora: "Explora Nobel",
       members: "Members",
       researchers: "Chileans in Sweden",
       resources: "Resources",
@@ -105,6 +112,11 @@ const CONTENT = {
         },
       ],
     },
+    explora: {
+      title: "Explora Nobel",
+      lead: "Our flagship project. Every year we bring high-school students from Chile to Sweden to experience Nobel Prize Week, bringing them closer to world-class science and the people who make it happen.",
+      videoCaption: "Documentary · 2024 edition",
+    },
     members: {
       title: "Members",
       lead: "People who are part of AICHIS. More profiles coming soon.",
@@ -131,6 +143,7 @@ const CONTENT = {
   sv: {
     nav: {
       about: "Om oss",
+      explora: "Explora Nobel",
       members: "Medlemmar",
       researchers: "Chilenare i Sverige",
       resources: "Resurser",
@@ -158,6 +171,11 @@ const CONTENT = {
         },
       ],
     },
+    explora: {
+      title: "Explora Nobel",
+      lead: "Vårt flaggskeppsprojekt. Varje år tar vi med gymnasieelever från Chile till Sverige för att uppleva Nobelveckan och komma närmare vetenskap i världsklass och de människor som gör den möjlig.",
+      videoCaption: "Dokumentär · 2024 års upplaga",
+    },
     members: {
       title: "Medlemmar",
       lead: "Personer som är en del av AICHIS. Fler profiler kommer snart.",
@@ -181,6 +199,35 @@ const CONTENT = {
   },
 
 };
+
+/* =========================================================================
+   EXPLORA NOBEL — EDITIONS
+   -------------------------------------------------------------------------
+   One entry per year. `state` is either "done" (already happened) or
+   "upcoming" (in preparation) — it only changes the colour of the marker.
+   `label` is shown under the year and can be translated. `link` is optional.
+   ========================================================================= */
+
+const EXPLORA_EDITIONS = [
+  {
+    year: "2024",
+    label: { es: "Primera edición · ver documental", en: "First edition · watch the documentary", sv: "Första upplagan · se dokumentären" },
+    state: "done",
+    link: "https://www.youtube.com/watch?v=5yug9GZ8PjY",
+  },
+  {
+    year: "2025",
+    label: { es: "Segunda edición realizada", en: "Second edition completed", sv: "Andra upplagan genomförd" },
+    state: "done",
+    link: "",
+  },
+  {
+    year: "2026",
+    label: { es: "En preparación", en: "In preparation", sv: "Under förberedelse" },
+    state: "upcoming",
+    link: "",
+  },
+];
 
 /* =========================================================================
    MEMBERS

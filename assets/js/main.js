@@ -41,6 +41,22 @@
       .join("");
   }
 
+  /* --- render the Explora Nobel editions timeline ---------------------- */
+  function renderExplora(lang) {
+    const el = document.getElementById("explora-editions");
+    if (!el) return;
+    el.innerHTML = EXPLORA_EDITIONS.map((e) => {
+      const label = typeof e.label === "object" ? e.label[lang] : e.label;
+      const inner = `
+        <span class="edition-year">${e.year}</span>
+        <span class="edition-label">${label || ""}</span>`;
+      const body = e.link
+        ? `<a class="edition-body" href="${e.link}" target="_blank" rel="noopener">${inner}</a>`
+        : `<span class="edition-body">${inner}</span>`;
+      return `<li class="edition edition-${e.state}">${body}</li>`;
+    }).join("");
+  }
+
   /* --- render the Members grid ----------------------------------------- */
   function renderMembers(lang) {
     const el = document.getElementById("members-grid");
@@ -126,6 +142,7 @@
 
     // dynamic sections
     renderAbout(lang);
+    renderExplora(lang);
     renderMembers(lang);
     renderResearchers(lang);
     renderResources(lang);
