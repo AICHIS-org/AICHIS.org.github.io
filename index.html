@@ -6,6 +6,8 @@
   <title>AICHIS</title>
   <meta name="description" content="AICHIS — Asociación de Investigadores Chilenos en Suecia / Association of Chilean Researchers in Sweden" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
 </head>
@@ -13,9 +15,8 @@
   <!-- ===================== HEADER / NAV ===================== -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#top">
-        <img class="brand-logo" src="assets/img/logo.svg" alt="AICHIS logo" />
-        <span class="brand-name">AICHIS</span>
+      <a class="brand" href="#top" aria-label="AICHIS — home">
+        <img class="brand-logo" src="assets/img/logo.png" alt="AICHIS" />
       </a>
 
       <nav class="main-nav" aria-label="Main navigation">
@@ -41,7 +42,9 @@
     <!-- ===================== HERO ===================== -->
     <section class="hero">
       <div class="container hero-inner">
-        <h1 class="hero-title" data-i18n="hero.title"></h1>
+        <h1 class="hero-title" aria-label="AICHIS">
+          <span class="l l-white">A</span><span class="l l-white">I</span><span class="l l-blue">C</span><span class="l l-red">H</span><span class="l l-white">I</span><span class="l l-yellow">S</span>
+        </h1>
         <p class="hero-subtitle" data-i18n="hero.subtitle"></p>
         <a class="btn btn-primary" href="#about" data-i18n="hero.cta"></a>
       </div>

@@ -20,7 +20,8 @@
   --shadow:      0 6px 24px rgba(13, 59, 140, 0.08);
   --shadow-lg:   0 12px 40px rgba(13, 59, 140, 0.14);
   --max:         1080px;
-  --font:        system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font:         "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: "Sora", var(--font);
 }
 
 /* --------------------------------- base --------------------------------- */
@@ -44,12 +45,23 @@ body {
   padding: 0 24px;
 }
 
-h1, h2, h3 { line-height: 1.2; margin: 0 0 .5em; }
+h1, h2, h3 { line-height: 1.2; margin: 0 0 .5em; font-family: var(--font-display); }
 
 a { color: var(--blue); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 img { max-width: 100%; display: block; }
+
+/* keyboard focus */
+:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: .001ms !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
+}
 
 /* -------------------------------- header -------------------------------- */
 .site-header {
@@ -71,14 +83,13 @@ img { max-width: 100%; display: block; }
 .brand {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-weight: 800;
-  color: var(--blue);
 }
 .brand:hover { text-decoration: none; }
-.brand-logo { height: 36px; width: auto; }
+.brand-logo { height: 52px; width: auto; }
 .brand-name {
+  font-family: var(--font-display);
   font-size: 1.35rem;
+  font-weight: 800;
   letter-spacing: 1px;
   color: var(--blue);
 }
@@ -165,10 +176,17 @@ img { max-width: 100%; display: block; }
   text-align: center;
 }
 .hero-title {
-  font-size: clamp(2.6rem, 6vw, 4.2rem);
-  letter-spacing: 3px;
-  margin-bottom: .2em;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(3rem, 9vw, 5.4rem);
+  letter-spacing: 2px;
+  margin-bottom: .25em;
 }
+/* wordmark echoes the logo's multicolour letters (light tones for navy bg) */
+.hero-title .l-white  { color: #ffffff; }
+.hero-title .l-blue   { color: #7db1ff; }
+.hero-title .l-red    { color: #ff7a6f; }
+.hero-title .l-yellow { color: var(--yellow); }
 .hero-subtitle {
   font-size: clamp(1.05rem, 2.4vw, 1.4rem);
   color: rgba(255, 255, 255, 0.9);
@@ -198,6 +216,8 @@ img { max-width: 100%; display: block; }
 .section-alt { background: var(--bg-alt); }
 
 .section-title {
+  font-family: var(--font-display);
+  font-weight: 700;
   font-size: clamp(1.7rem, 3.5vw, 2.3rem);
   color: var(--blue);
   text-align: center;
@@ -320,7 +340,13 @@ img { max-width: 100%; display: block; }
   text-align: center;
   border-top: 4px solid var(--yellow);
 }
-.site-footer .brand-name { color: var(--white); font-size: 1.4rem; }
+.site-footer .brand-name {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: var(--white);
+  font-size: 1.5rem;
+}
 .site-footer p { margin: 8px 0; }
 .footer-meta { color: rgba(255, 255, 255, 0.55); font-size: .85rem; }
 
