@@ -348,7 +348,47 @@ img { max-width: 100%; display: block; }
   font-size: 1.5rem;
 }
 .site-footer p { margin: 8px 0; }
-.footer-meta { color: rgba(255, 255, 255, 0.55); font-size: .85rem; }
+.footer-meta { color: rgba(255, 255, 255, 0.55); font-size: .85rem; margin-top: 28px; }
+
+/* contribute / open-science note */
+.footer-contribute {
+  max-width: 640px;
+  margin: 28px auto 0;
+  padding-top: 26px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+.footer-contribute h3 {
+  font-family: var(--font-display);
+  color: var(--yellow);
+  font-size: 1.05rem;
+  margin-bottom: .4em;
+}
+.footer-contribute p { color: rgba(255, 255, 255, 0.82); margin: 0 auto; }
+.footer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 18px;
+}
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  padding: 9px 18px;
+  transition: background .15s, border-color .15s, transform .12s;
+}
+.footer-link::before { content: "\2197"; color: var(--yellow); font-weight: 700; }
+.footer-link:hover {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--yellow);
+  transform: translateY(-2px);
+}
 
 /* ------------------------------ responsive ------------------------------ */
 @media (max-width: 760px) {

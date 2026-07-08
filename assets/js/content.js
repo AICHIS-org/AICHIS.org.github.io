@@ -61,6 +61,10 @@ const CONTENT = {
     },
     footer: {
       tagline: "Asociación de Investigadores Chilenos en Suecia",
+      contributeTitle: "Ciencia abierta",
+      contributeText: "Este sitio es de código abierto. ¿Encontraste un error o quieres sugerir un cambio? Cuéntanoslo en GitHub, o si te animas, propón directamente la mejora.",
+      reportIssue: "Reportar un problema",
+      proposeChange: "Proponer un cambio (Pull Request)",
     },
   },
 
@@ -104,6 +108,10 @@ const CONTENT = {
     },
     footer: {
       tagline: "Association of Chilean Researchers in Sweden",
+      contributeTitle: "Open science",
+      contributeText: "This site is open source. Found something wrong or have a suggestion? Let us know on GitHub, or, if you like, propose the change yourself.",
+      reportIssue: "Report an issue",
+      proposeChange: "Propose a change (Pull Request)",
     },
   },
 
@@ -147,6 +155,10 @@ const CONTENT = {
     },
     footer: {
       tagline: "Föreningen för chilenska forskare i Sverige",
+      contributeTitle: "Öppen vetenskap",
+      contributeText: "Den här webbplatsen är öppen källkod. Hittade du ett fel eller har ett förslag? Berätta för oss på GitHub, eller föreslå gärna ändringen själv.",
+      reportIssue: "Rapportera ett problem",
+      proposeChange: "Föreslå en ändring (Pull Request)",
     },
   },
 
