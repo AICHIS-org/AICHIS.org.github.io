@@ -9,8 +9,7 @@ Trilingual static site: **Español · English · Svenska**.
 
 ## 🌐 Live site
 
-Once GitHub Pages is enabled, the site is served from this repository.
-See **Publishing** below.
+**https://aichis-org.github.io/** — deploys automatically on every push to `main`.
 
 ---
 
@@ -89,23 +88,20 @@ python3 -m http.server 8000
 
 ## 🚀 Publishing (GitHub Pages)
 
-1. Go to the repository **Settings → Pages**.
-2. Under **Build and deployment**, set **Source: Deploy from a branch**.
-3. Choose branch **`main`** and folder **`/ (root)`**, then **Save**.
-4. Wait ~1 minute; GitHub shows the published URL.
+The site is live at **https://aichis-org.github.io/** and deploys **automatically**
+on every push to `main` via GitHub Actions (see
+[`.github/workflows/pages.yml`](.github/workflows/pages.yml)). You don't need to
+do anything to publish — just push (or merge a PR).
 
-> **Note on the URL:** this repo is named `AICHIS.org.github.io`. GitHub only
-> treats a repo as the organisation's root site when it is named exactly
-> `AICHIS-org.github.io`. As-is, the site publishes as a *project page* at
-> `https://aichis-org.github.io/AICHIS.org.github.io/`. All links in this project
-> are relative, so it works either way. To get the clean root URL
-> `https://aichis-org.github.io/`, rename the repo to `AICHIS-org.github.io`.
+The repo is named `AICHIS-org.github.io` (matching the organisation), which is
+what makes the clean root URL work. Pages source is set to **GitHub Actions**
+under Settings → Pages.
 
 ---
 
 ## 📌 Roadmap / TODO
 
-- [ ] Replace placeholder logo with the official AICHIS logo.
 - [ ] Add real members to the `MEMBERS` list.
+- [ ] Add real people to the `RESEARCHERS` list (Chileans in Sweden).
 - [ ] Add real resources to the `RESOURCES` list.
 - [ ] Expand the About Us content as needed.

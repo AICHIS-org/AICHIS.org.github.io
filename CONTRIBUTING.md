@@ -11,8 +11,8 @@ There are two ways to contribute:
 
 Open an issue — no coding needed:
 
-- **[Report a problem](https://github.com/AICHIS-org/AICHIS.org.github.io/issues/new/choose)** — something looks wrong or doesn't work.
-- **[Suggest content or a change](https://github.com/AICHIS-org/AICHIS.org.github.io/issues/new/choose)** — new text, a member, a resource, or an idea.
+- **[Report a problem](https://github.com/AICHIS-org/AICHIS-org.github.io/issues/new/choose)** — something looks wrong or doesn't work.
+- **[Suggest content or a change](https://github.com/AICHIS-org/AICHIS-org.github.io/issues/new/choose)** — new text, a member, a resource, or an idea.
 
 Just fill in the short form. That's it.
 
@@ -42,7 +42,7 @@ More detail on the file structure is in the [README](README.md).
 Este sitio es de **código abierto**. No necesitas saber programar.
 
 - **Reportar un problema o sugerir algo:** abre un
-  [issue](https://github.com/AICHIS-org/AICHIS.org.github.io/issues/new/choose)
+  [issue](https://github.com/AICHIS-org/AICHIS-org.github.io/issues/new/choose)
   y completa el formulario.
 - **Proponer el cambio tú mismo/a:** edita el archivo
   [`assets/js/content.js`](assets/js/content.js) desde el navegador (botón ✏️),
@@ -53,7 +53,7 @@ Este sitio es de **código abierto**. No necesitas saber programar.
 Den här webbplatsen är **öppen källkod**. Du behöver inte kunna programmera.
 
 - **Rapportera ett problem eller föreslå något:** öppna ett
-  [issue](https://github.com/AICHIS-org/AICHIS.org.github.io/issues/new/choose)
+  [issue](https://github.com/AICHIS-org/AICHIS-org.github.io/issues/new/choose)
   och fyll i formuläret.
 - **Föreslå ändringen själv:** redigera filen
   [`assets/js/content.js`](assets/js/content.js) i webbläsaren (pennan ✏️),
