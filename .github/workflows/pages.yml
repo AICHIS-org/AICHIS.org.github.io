@@ -27,6 +27,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Stamp asset URLs with the commit hash so browsers always load the
+      # newest CSS/JS after a deploy instead of a cached copy.
+      - name: Cache-bust assets
+        run: sed -i "s/__BUILD__/${GITHUB_SHA::7}/g" index.html
+
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
