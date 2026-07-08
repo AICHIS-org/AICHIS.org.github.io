@@ -26,6 +26,7 @@ const CONTENT = {
     nav: {
       about: "Sobre nosotros",
       members: "Miembros",
+      researchers: "Chilenos en Suecia",
       resources: "Recursos",
     },
     hero: {
@@ -55,6 +56,11 @@ const CONTENT = {
       title: "Miembros",
       lead: "Personas que forman parte de AICHIS. Pronto agregaremos más perfiles.",
     },
+    researchers: {
+      title: "Chilenos en Suecia",
+      lead: "Un directorio abierto de investigadoras e investigadores chilenos que trabajan en Suecia, más allá de nuestros miembros. ¿Conoces a alguien, o eres tú? Ayúdanos a ampliar esta lista.",
+      cta: "Sugerir un/a investigador/a",
+    },
     resources: {
       title: "Recursos",
       lead: "Enlaces y materiales útiles para investigadores chilenos en Suecia. Iremos ampliando esta sección.",
@@ -73,6 +79,7 @@ const CONTENT = {
     nav: {
       about: "About us",
       members: "Members",
+      researchers: "Chileans in Sweden",
       resources: "Resources",
     },
     hero: {
@@ -102,6 +109,11 @@ const CONTENT = {
       title: "Members",
       lead: "People who are part of AICHIS. More profiles coming soon.",
     },
+    researchers: {
+      title: "Chileans in Sweden",
+      lead: "An open directory of Chilean researchers working in Sweden, beyond our members. Know someone, or is it you? Help us grow this list.",
+      cta: "Suggest a researcher",
+    },
     resources: {
       title: "Resources",
       lead: "Useful links and materials for Chilean researchers in Sweden. We will keep expanding this section.",
@@ -120,6 +132,7 @@ const CONTENT = {
     nav: {
       about: "Om oss",
       members: "Medlemmar",
+      researchers: "Chilenare i Sverige",
       resources: "Resurser",
     },
     hero: {
@@ -148,6 +161,11 @@ const CONTENT = {
     members: {
       title: "Medlemmar",
       lead: "Personer som är en del av AICHIS. Fler profiler kommer snart.",
+    },
+    researchers: {
+      title: "Chilenare i Sverige",
+      lead: "En öppen katalog över chilenska forskare som arbetar i Sverige, utöver våra medlemmar. Känner du någon, eller är det du? Hjälp oss att utöka listan.",
+      cta: "Föreslå en forskare",
     },
     resources: {
       title: "Resurser",
@@ -182,6 +200,24 @@ const MEMBERS = [
     link: "",  // e.g. "https://..." (personal or institutional page)
   },
   // --- copy the block above to add another member ---
+];
+
+/* =========================================================================
+   CHILEANS IN SWEDEN  (broader directory, beyond AICHIS members)
+   -------------------------------------------------------------------------
+   Chilean researchers working in Sweden who are not necessarily AICHIS
+   members. `field` (research area) and can be translated per language.
+   To add someone, copy one { ... } block and edit the values.
+   ========================================================================= */
+
+const RESEARCHERS = [
+  {
+    name: "Nombre Apellido",
+    field: { es: "Área de investigación", en: "Research area", sv: "Forskningsområde" },
+    affiliation: "Universidad / University",
+    link: "", // e.g. "https://..." (personal or institutional profile)
+  },
+  // --- copy the block above to add another researcher ---
 ];
 
 /* =========================================================================

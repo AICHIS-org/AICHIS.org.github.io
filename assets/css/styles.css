@@ -294,6 +294,40 @@ img { max-width: 100%; display: block; }
 .member-role { color: var(--red); font-weight: 600; font-size: .9rem; margin: 0 0 2px; }
 .member-aff { color: var(--muted); font-size: .85rem; margin: 0; }
 
+/* chileans in sweden — directory */
+.researchers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 18px;
+}
+.researcher-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--blue);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  box-shadow: var(--shadow);
+  transition: transform .15s, box-shadow .15s, border-color .15s;
+}
+.researcher-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+  border-left-color: var(--red);
+}
+.researcher-name { font-size: 1.08rem; margin-bottom: 4px; }
+.researcher-name a { color: var(--ink); }
+.researcher-name a:hover { color: var(--blue); }
+.researcher-field { color: var(--red); font-weight: 600; font-size: .9rem; margin: 0 0 2px; }
+.researcher-aff { color: var(--muted); font-size: .88rem; margin: 0; }
+
+.section-cta { text-align: center; margin-top: 40px; }
+.btn-outline {
+  background: transparent;
+  color: var(--blue);
+  border: 2px solid var(--blue);
+}
+.btn-outline:hover { background: var(--blue); color: var(--white); }
+
 /* resources */
 .resources-list {
   display: grid;

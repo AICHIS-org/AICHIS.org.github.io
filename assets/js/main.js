@@ -72,6 +72,28 @@
     }).join("");
   }
 
+  /* --- render the Chileans-in-Sweden directory ------------------------- */
+  function renderResearchers(lang) {
+    const el = document.getElementById("researchers-grid");
+    if (!el) return;
+    if (!RESEARCHERS.length) {
+      el.innerHTML = `<p class="empty-note">—</p>`;
+      return;
+    }
+    el.innerHTML = RESEARCHERS.map((r) => {
+      const field = typeof r.field === "object" ? r.field[lang] : r.field;
+      const name = r.link
+        ? `<a href="${r.link}" target="_blank" rel="noopener">${r.name}</a>`
+        : r.name;
+      return `
+        <article class="researcher-card">
+          <h3 class="researcher-name">${name}</h3>
+          <p class="researcher-field">${field || ""}</p>
+          <p class="researcher-aff">${r.affiliation || ""}</p>
+        </article>`;
+    }).join("");
+  }
+
   /* --- render the Resources list --------------------------------------- */
   function renderResources(lang) {
     const el = document.getElementById("resources-list");
@@ -105,6 +127,7 @@
     // dynamic sections
     renderAbout(lang);
     renderMembers(lang);
+    renderResearchers(lang);
     renderResources(lang);
 
     // reflect state

@@ -24,6 +24,7 @@ It is organised in plain language and contains everything you'll normally change
 | ----------------------------- | ------------------------------------------------------------------ |
 | Change any text on the page   | Find the text and edit it — for **all three** languages (`es`, `en`, `sv`). |
 | Add / edit a **member**       | Copy a `{ ... }` block in the `MEMBERS` list and change the values. |
+| Add a **Chilean researcher in Sweden** | Copy a `{ ... }` block in the `RESEARCHERS` list and change the values. |
 | Add / edit a **resource**     | Copy a `{ ... }` block in the `RESOURCES` list and change the values. |
 
 Keep the quotes `" "` and commas `,` exactly as shown. That's it.
