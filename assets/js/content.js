@@ -60,7 +60,7 @@ const CONTENT = {
     },
     members: {
       title: "Miembros",
-      lead: "Personas que forman parte de AICHIS. Pronto agregaremos más perfiles.",
+      lead: "Conoce a nuestra directiva. Pronto sumaremos más miembros y perfiles.",
     },
     researchers: {
       title: "Chilenos en Suecia",
@@ -119,7 +119,7 @@ const CONTENT = {
     },
     members: {
       title: "Members",
-      lead: "People who are part of AICHIS. More profiles coming soon.",
+      lead: "Meet our board. We'll add more members and profiles soon.",
     },
     researchers: {
       title: "Chileans in Sweden",
@@ -178,7 +178,7 @@ const CONTENT = {
     },
     members: {
       title: "Medlemmar",
-      lead: "Personer som är en del av AICHIS. Fler profiler kommer snart.",
+      lead: "Möt vår styrelse. Vi lägger till fler medlemmar och profiler snart.",
     },
     researchers: {
       title: "Chilenare i Sverige",
@@ -232,21 +232,28 @@ const EXPLORA_EDITIONS = [
 /* =========================================================================
    MEMBERS
    -------------------------------------------------------------------------
-   Names, roles and links are the same in every language, so they live here
-   once. `role` can be translated per language if you wish (see below).
+   Listed board (directiva) first, then any other members you add after.
+   Names, photos and links are the same in every language; `role` is
+   translated per language. `photo` is optional — leave "" to show initials.
    To add a member, copy one { ... } block and edit the values.
-   `photo` is optional — leave "" to show initials instead.
    ========================================================================= */
 
+const ROLES = {
+  president: { es: "Presidenta", en: "President", sv: "Ordförande" },
+  treasurer: { es: "Tesorero", en: "Treasurer", sv: "Kassör" },
+  boardMember: { es: "Miembro titular", en: "Board member", sv: "Styrelseledamot" },
+  deputy: { es: "Miembro suplente", en: "Deputy member", sv: "Suppleant" },
+};
+
 const MEMBERS = [
-  {
-    name: "Nombre Apellido",
-    role: { es: "Investigador/a", en: "Researcher", sv: "Forskare" },
-    affiliation: "Universidad / University",
-    photo: "", // e.g. "assets/img/members/name.jpg"
-    link: "",  // e.g. "https://..." (personal or institutional page)
-  },
-  // --- copy the block above to add another member ---
+  { name: "Carolina Oses",       role: ROLES.president,   affiliation: "", photo: "", link: "" },
+  { name: "Rodrigo Morales",     role: ROLES.treasurer,   affiliation: "", photo: "", link: "" },
+  { name: "Markos Saravia",      role: ROLES.boardMember, affiliation: "", photo: "", link: "" },
+  { name: "Giorgio Giusti",      role: ROLES.boardMember, affiliation: "", photo: "", link: "" },
+  { name: "Sofía Bobadilla",     role: ROLES.boardMember, affiliation: "", photo: "", link: "" },
+  { name: "Gustavo Monasterio",  role: ROLES.deputy,      affiliation: "", photo: "", link: "" },
+  { name: "Ignacio Verdugo",     role: ROLES.deputy,      affiliation: "", photo: "", link: "" },
+  // --- copy a block above to add another member ---
 ];
 
 /* =========================================================================
