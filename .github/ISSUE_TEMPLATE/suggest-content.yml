@@ -1,0 +1,39 @@
+name: "✨ Suggest content or a change"
+description: "Propose new content, a correction, a member, a resource, or an improvement."
+title: "[Suggestion]: "
+labels: ["content"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have something to add or improve? Tell us here.
+        If you'd rather make the change yourself, see CONTRIBUTING.md and open a Pull Request.
+  - type: dropdown
+    id: type
+    attributes:
+      label: What kind of suggestion is this?
+      options:
+        - New or corrected text
+        - Add / update a member
+        - Add / update a resource
+        - New section or feature
+        - Translation fix (ES / EN / SV)
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Your suggestion
+      description: Describe what you'd like added or changed. Include the exact text, links, or names if you have them.
+      placeholder: "e.g. Add resource: 'Vetenskapsrådet — Swedish Research Council', https://www.vr.se, useful for funding calls."
+    validations:
+      required: true
+  - type: input
+    id: languages
+    attributes:
+      label: Languages provided
+      description: If this is text, which of the three languages did you include? We aim to keep ES / EN / SV in sync.
+      placeholder: "e.g. Spanish only — help with EN/SV welcome"
+    validations:
+      required: false

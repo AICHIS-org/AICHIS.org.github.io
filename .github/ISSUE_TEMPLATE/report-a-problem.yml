@@ -1,0 +1,55 @@
+name: "🐞 Report a problem"
+description: "Something on the website looks wrong or doesn't work."
+title: "[Problem]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the AICHIS website! Fill in what you can —
+        you don't need to know how to code. / Gracias por ayudar / Tack för din hjälp.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What's wrong?
+      description: Describe the problem. What did you expect to see instead?
+      placeholder: "e.g. The Swedish version of the About section shows English text."
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where is it?
+      description: Which section or page? A link helps.
+      placeholder: "e.g. Members section / https://aichis-org.github.io/..."
+    validations:
+      required: false
+  - type: dropdown
+    id: language
+    attributes:
+      label: Which language version?
+      options:
+        - Español
+        - English
+        - Svenska
+        - All / not sure
+    validations:
+      required: false
+  - type: dropdown
+    id: device
+    attributes:
+      label: What device were you using?
+      options:
+        - Computer
+        - Phone
+        - Tablet
+        - Not sure
+    validations:
+      required: false
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot (optional)
+      description: If you can, drag and drop a screenshot here. It really helps!
+    validations:
+      required: false
