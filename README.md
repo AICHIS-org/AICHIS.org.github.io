@@ -37,11 +37,18 @@ initials instead.
 
 ## 🎨 Branding
 
-- **Logo:** replace `assets/img/logo.svg` (and `assets/img/favicon.svg`) with the
-  official AICHIS logo. Keep the same file names and no other change is needed.
+- **Logo:** the header uses `assets/img/logo.png` (colour, on white). The footer
+  uses `assets/img/logo-white.png`, a reversed white version for the dark
+  background. If you replace the logo, update `logo.png` and regenerate the white
+  version (any image editor: remove the background and make the wordmark white),
+  keeping the file name `logo-white.png`.
+- **Favicon:** `assets/img/favicon.svg` (the "A" monogram). Edit it and re-export
+  `favicon-32.png` and `apple-touch-icon.png` if you change it.
 - **Colours:** the palette (Chilean blue/red/white + Swedish yellow) is defined
   once at the top of [`assets/css/styles.css`](assets/css/styles.css) under
   `:root`. Change those variables to retheme the whole site.
+- **Social links:** the YouTube / X / LinkedIn URLs live in the `<footer>` of
+  [`index.html`](index.html) (search for `class="social"`).
 
 ---
 

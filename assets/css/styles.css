@@ -345,16 +345,35 @@ img { max-width: 100%; display: block; }
   gap: 56px;
   align-items: start;
 }
-.site-footer .brand-name {
-  font-family: var(--font-display);
-  font-weight: 800;
-  letter-spacing: 2px;
-  color: var(--white);
-  font-size: 1.5rem;
-}
+.footer-logo { height: 46px; width: auto; }
 .site-footer p { margin: 8px 0; }
-.footer-brand p { color: rgba(255, 255, 255, 0.75); }
-.footer-meta { color: rgba(255, 255, 255, 0.5); font-size: .85rem; margin-top: 18px; }
+.footer-brand p { color: rgba(255, 255, 255, 0.75); margin-top: 14px; }
+.footer-meta { color: rgba(255, 255, 255, 0.5); font-size: .85rem; margin-top: 20px; }
+
+/* social links */
+.social {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0;
+}
+.social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.1);
+  transition: background .15s, color .15s, transform .12s;
+}
+.social a:hover {
+  background: var(--yellow);
+  color: var(--blue-dark);
+  transform: translateY(-2px);
+}
 
 /* contribute / open-science note */
 .footer-contribute {
