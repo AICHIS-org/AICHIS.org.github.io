@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AICHIS</title>
+  <meta name="description" content="AICHIS — Asociación de Investigadores Chilenos en Suecia / Association of Chilean Researchers in Sweden" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <img class="brand-logo" src="assets/img/logo.svg" alt="AICHIS logo" />
+        <span class="brand-name">AICHIS</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#about" data-i18n="nav.about"></a></li>
+          <li><a href="#members" data-i18n="nav.members"></a></li>
+          <li><a href="#resources" data-i18n="nav.resources"></a></li>
+        </ul>
+      </nav>
+
+      <div class="lang-switch" role="group" aria-label="Language selector">
+        <button class="lang-btn" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="sv">SV</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1 class="hero-title" data-i18n="hero.title"></h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle"></p>
+        <a class="btn btn-primary" href="#about" data-i18n="hero.cta"></a>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="about.title"></h2>
+        <p class="section-lead" data-i18n="about.lead"></p>
+        <div class="cards" id="about-cards"><!-- populated from content.js --></div>
+      </div>
+    </section>
+
+    <!-- ===================== MEMBERS ===================== -->
+    <section id="members" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title" data-i18n="members.title"></h2>
+        <p class="section-lead" data-i18n="members.lead"></p>
+        <div class="members-grid" id="members-grid"><!-- populated from content.js --></div>
+      </div>
+    </section>
+
+    <!-- ===================== RESOURCES ===================== -->
+    <section id="resources" class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="resources.title"></h2>
+        <p class="section-lead" data-i18n="resources.lead"></p>
+        <div class="resources-list" id="resources-list"><!-- populated from content.js --></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="brand-name">AICHIS</span>
+      <p data-i18n="footer.tagline"></p>
+      <p class="footer-meta">&copy; <span id="year"></span> AICHIS</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
